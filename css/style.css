@@ -44,11 +44,16 @@ body {
     text-transform: uppercase;
     color: var(--logo-text-color);
 }
+.header-logo:is(:focus, :hover) {
+    color: #404bbf;
+}
+
 .header-logo span {
     color: var(--header-logo-span-color);
 }
 
 .header-menu-link {
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -56,7 +61,7 @@ body {
 }
 .header-menu-link:is(:focus, :hover) {
     font-weight: 600;
-    color: var(--header-link-hov-color);
+    color: #404bbf;
 }
 .header-address {
     font-style: normal;
@@ -98,11 +103,11 @@ body {
 
 .hero-btn:is(:focus, :hover) {
     background-color: #404BBF;
-    background: var(--hero-btn-bg-color);
 }
 
 /*---------- main   section1 --------*/
 .features-item-title {
+    font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -128,9 +133,10 @@ body {
 }
 /*---------- main   section3 --------*/
 .staff {
-    background-color: var(--footer-text-color);
+    background-color: #F4F4FD;
 }
 .staff-title {
+    font-weight: 500;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -139,7 +145,7 @@ body {
     color: var(--main-title-color);
 }
 .staff-list-item {
-    background-color: var(--white);
+    background-color: #FFFFFF;
 }
 
 .staff-item-title {
