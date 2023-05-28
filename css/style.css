@@ -12,7 +12,7 @@
     --main-text-color: #434455;/* SLATE */
     --address-text-color: #434455; /* SLATE */
 
-    --filter-btn-color: #4d5ae5; /* IRIS */
+    --filter-btn-color: #F4F4FD; /* IRIS */
     --filter-btn-hov-color: #404BBF; /* OCEAN */
 
     --filter-btn-text-color: #4D5AE5; /* IRIS */
@@ -35,6 +35,9 @@ body {
 }
 
 /*---------- header --------*/
+.header:is(:focus, :hover) {
+    color: #404bbf;
+}
 .header-logo{
     font-family: "Raleway", sans-serif;
     font-weight: 800;
@@ -92,7 +95,7 @@ body {
 
 .hero-btn {
     cursor: pointer;
-    background: var(--hero-btn-bg-color);
+    background-color: #4D5AE5;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -124,6 +127,7 @@ body {
 /*---------- main   section2 --------*/
 
 .activity-title {
+    font-weight: 500;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -191,13 +195,13 @@ body {
 
 /*---------- portfolio section 2 --------*/
 
-.cards-item-title {
+.cards-link-title {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--main-title-color);
 }
-.cards-item-text {
+.cards-link-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -208,12 +212,12 @@ body {
 .filter-btn{
     cursor: pointer;
     font-family: "Roboto", sans-serif;
-    background: var(--filter-btn-color);
+    background-color: var(--filter-btn-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: var(---filter-btn-text-color);
+    color: var(--filter-btn-text-color);
 }
 
 .filter-btn:is( :focus, :hover, :active) {
