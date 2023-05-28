@@ -4,15 +4,15 @@
     --footer-logo-span-color: #F4F4FD;
     --white: #ffffff;
     --header-link-color: #2E2F42;/* NAVY BLUE */
-    --header-link-hov-color: #434455;/* SLATE */
+    --header-link-hov-color: #404bbf;/* SLATE */
     --hero-btn-text-color: #ffffff;
-    --hero-btn-bg-color: #4D5AE5;
+    --hero-btn-bg-color: #404BBF;/* OCEAN */
     --hero-bg-color: #2E2F42;/* NAVY BLUE */
     --main-title-color: #2E2F42; /* NAVY BLUE */
     --main-text-color: #434455;/* SLATE */
     --address-text-color: #434455; /* SLATE */
 
-    --filter-btn-color: #F4F4FD; /* CLOUD */
+    --filter-btn-color: #4d5ae5; /* IRIS */
     --filter-btn-hov-color: #404BBF; /* OCEAN */
 
     --filter-btn-text-color: #4D5AE5; /* IRIS */
@@ -49,13 +49,12 @@ body {
 }
 
 .header-menu-link {
-    font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--header-link-color);
 }
-.header-menu-link:hover {
+.header-menu-link:is(:focus, :hover) {
     font-weight: 600;
     color: var(--header-link-hov-color);
 }
@@ -97,7 +96,8 @@ body {
     color: var(--hero-btn-text-color);
 }
 
-.hero-btn:hover {
+.hero-btn:is(:focus, :hover) {
+    background-color: #404BBF;
     background: var(--hero-btn-bg-color);
 }
 
@@ -119,7 +119,6 @@ body {
 /*---------- main   section2 --------*/
 
 .activity-title {
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -128,14 +127,19 @@ body {
     color: var(--main-title-color);
 }
 /*---------- main   section3 --------*/
+.staff {
+    background-color: var(--footer-text-color);
+}
 .staff-title {
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--main-title-color);
+}
+.staff-list-item {
+    background-color: var(--white);
 }
 
 .staff-item-title {
@@ -163,6 +167,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     color: var(--footer-text-color);
+    letter-spacing: 0.02em;
 }
 
 .footer-logo {
@@ -196,6 +201,7 @@ body {
 
 .filter-btn{
     cursor: pointer;
+    font-family: "Roboto", sans-serif;
     background: var(--filter-btn-color);
     font-weight: 500;
     font-size: 16px;
@@ -204,7 +210,7 @@ body {
     color: var(---filter-btn-text-color);
 }
 
-.filter-btn:is( :hover, :active) {
-    background: var(--filter-btn-hov-color);
-    color: var(--white);
+.filter-btn:is( :focus, :hover, :active) {
+    background-color: #404BBF;
+    color: #FFFFFF;
 }
