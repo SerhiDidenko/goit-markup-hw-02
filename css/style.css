@@ -35,9 +35,7 @@ body {
 }
 
 /*---------- header --------*/
-/* .header:is(:hover, :focus) {
-    color: #404bbf;
-} */
+
 .header-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 800;
@@ -65,13 +63,16 @@ body {
     letter-spacing: 0.02em;
     color: var(--header-link-color);
 }
-.header-menu-link:is(:focus, :hover) {
-    font-weight: 600;
+
+.header-menu-link:focus,
+.header-menu-link::hover{
     color: #404bbf;
 }
+
 .header-address {
     font-style: normal;
 }
+
 .header-address-link {
     font-style: normal;
     font-size: 16px;
@@ -79,9 +80,11 @@ body {
     letter-spacing: 0.02em;
     color: var(--address-text-color);
 }
+
 .header-address-link:hover {
     color: var(--filter-btn-text-color);
 }
+
 /*---------- main   hero --------*/
 .hero {
     background: var(--hero-bg-color);
