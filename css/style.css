@@ -45,12 +45,10 @@ body {
     text-transform: uppercase;
     color: var(--logo-text-color);
 }
-.header-logo:focus {
-    color: #404bbf;
-} 
+.header-logo:focus,
 .header-logo:hover {
     color: #404bbf;
-}
+} 
 
 .header-logo span {
     color: var(--header-logo-span-color);
@@ -65,7 +63,7 @@ body {
 }
 
 .header-menu-link:focus,
-.header-menu-link::hover{
+.header-menu-link:hover{
     color: #404bbf;
 }
 
