@@ -66,6 +66,10 @@ body {
 .header-address {
     font-style: normal;
 }
+.header-address:hover,
+.header-address:focus {
+    color: var(--header-link-hov-color);
+}
 
 .header-address-link {
     font-style: normal;
@@ -75,8 +79,9 @@ body {
     color: var(--address-text-color);
 }
 
-.header-address-link:hover {
-    color: var(--filter-btn-text-color);
+.header-address-link:hover,
+.header-address-link:focus {
+    color: var(--header-link-hov-color);
 }
 
 /*---------- main   hero --------*/
