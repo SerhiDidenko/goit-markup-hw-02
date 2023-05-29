@@ -45,8 +45,8 @@ body {
     text-transform: uppercase;
     color: var(--logo-text-color);
 }
-.header-logo:focus,
-.header-logo:hover {
+.header-logo:hover,
+.header-logo:focus {
     color: #404bbf;
 } 
 
@@ -62,8 +62,8 @@ body {
     color: var(--header-link-color);
 }
 
-.header-menu-link:focus,
-.header-menu-link:hover{
+.header-menu-link:hover,
+.header-menu-link:focus {
     color: #404bbf;
 }
 
