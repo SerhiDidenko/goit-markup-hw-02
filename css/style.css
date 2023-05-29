@@ -36,7 +36,7 @@ body {
 
 /*---------- header --------*/
 
-.header-logo {
+.logo {
     font-family: "Raleway", sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -45,11 +45,6 @@ body {
     text-transform: uppercase;
     color: var(--header-logo-color);
 }
-
-.header-logo:hover,
-.header-logo:focus {
-    color: #404bbf;
-} 
 
 .header-logo span {
     color: var(--header-logo-span-color);
