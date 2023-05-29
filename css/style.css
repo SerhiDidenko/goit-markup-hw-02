@@ -46,7 +46,7 @@ body {
     color: var(--header-logo-color);
 }
 
-.header-logo span {
+.logo-web {
     color: var(--header-logo-span-color);
 }
 
